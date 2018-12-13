@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
-        Rxue: ['./src/component/index.js']
+        Rxue: ['./src/components/index.js']
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -17,6 +17,6 @@ module.exports = {
         'react-dom': 'react-dom'
     },
     plugins:[
-        // new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin(['dist'])
     ]
 }
