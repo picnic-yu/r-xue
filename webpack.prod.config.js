@@ -3,14 +3,14 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
-        xue: ['./src/component/index.js']
+        Rxue: ['./src/component/index.js']
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',
         publicPath: "/dist/",
         libraryTarget: 'umd',
-        library: 'xue'
+        library: 'Rxue'
     },
     externals: {
         'react': 'react',//因为引入的肯定是react项目，所以不需要再将react打包进npm包

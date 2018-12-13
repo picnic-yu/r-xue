@@ -1,10 +1,11 @@
 {
-  "name": "xue",
+  "name": "r-xue",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/xue.js",
+  "main": "dist/Rxue.js",
   "files": [
-    "package.json","dist"
+    "package.json",
+    "dist"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
@@ -31,6 +32,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.0",
+    "r-xue": "^0.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "style-loader": "^0.23.1",
