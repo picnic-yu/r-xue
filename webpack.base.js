@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const WebpackParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].[hash:8].js'
@@ -25,6 +25,12 @@ module.exports = {
                 //         }
                 //     }
                 // ],
+                include: path.resolve('./src'),
+                exclude: /node_modules/
+            },
+            {
+                test: /\.tsx?$/,
+                use: ['ts-loader'],
                 include: path.resolve('./src'),
                 exclude: /node_modules/
             },

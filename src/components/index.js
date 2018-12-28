@@ -1,7 +1,5 @@
-import Button from './Button.jsx';
-import Alert from './Alert.jsx';
+import Button from './Button.tsx';
 
 export {
-    Button,
-    Alert
+    Button
 }
